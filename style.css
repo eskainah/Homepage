@@ -4,6 +4,7 @@
     --text-light: #fafafa;
     --white: #fff;
     --black: #00000047;
+    --shadow: 2px 11px 30px 4px rgba(0, 0, 0, 0.35);
 }
 
 *, *::before, *::after{
@@ -52,9 +53,8 @@ body {
 .author__name{
     position: relative;
     top:-120px;
-    left: 15px;
+    left: 15px;  
     width: 80%;
-    height: 100px;
     font-family: "Playfair Display", serif;
     font-size: 1.5rem;
     color: var(--text-light);
@@ -82,7 +82,7 @@ body {
 .cards{
     margin-bottom: 3em;
     background-color: #ffffff;
-    box-shadow: 2px 11px 30px 4px rgba(0, 0, 0, 0.35);
+    box-shadow: var(--shadow);
 }
 .project__img{
     background-color: rgb(30, 117, 88);
@@ -146,6 +146,31 @@ footer{
 
 /* media Queries for tablet */
 @media (min-width: 600px) {
+    /* Author info section starts here */
+    .author{
+        flex-direction: row;
+    }
+    .author__img{
+        width: 45%;
+        height: 360px;
+        position: relative;
+    }
+    .author__name{
+        position: relative;
+        top: 20px;
+        left: -50px;
+        font-size: 1.28rem;
+    }
+    .about{
+        background-color: var(--white);
+        box-shadow: var(--shadow);
+        width: 80%;
+        transform: translate(30px, -150px);
+    }
+    .profile__link{
+        visibility: hidden;
+    }
+    /* Author info section ends here */
  /*  cards starts here */
 .project{
     display: grid;
@@ -155,6 +180,7 @@ footer{
 }
 .cardheader{
     text-align: left;
+    margin-top: -100px;
 }
 .cards{
     margin-bottom: 0;
