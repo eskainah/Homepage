@@ -97,7 +97,7 @@ body {
 }
 .project__info{
     padding: 1em;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 .project__title{
     display: flex;
@@ -106,7 +106,7 @@ body {
 
     h3{
         text-align: left;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 }
 .right{
@@ -232,17 +232,10 @@ footer{
 
 /* media Queries for desktop */
 @media (min-width: 960px) {  
-    /* Author info section starts here */
- /* .pgHeader{
-    display: flex;
-    flex-direction: column;
- }
- */
- .hero{
+.hero{
     max-height: 100vh;
     background: linear-gradient(166deg, var(--primary) 60%, var(--white) 60%);
  }
-
 .author{
     margin-left: 5% ;
     width: 40%;
@@ -268,21 +261,11 @@ footer{
         text-indent: 0;
     }
   }
-  /*
 
-.
-.profile__link{
-        visibility: hidden;
-    }
-.about{
-    z-index: 1; 
-    transform: translate(0, -200px); 
-    background-color: var(--white);
-    box-shadow: var(--shadow);
-    font-size: 1.5rem;
-    
-    position: relative;
-    width: 90%;
-   
-} */
+.cardheader{
+    margin-top: -350px;
+}
+.project{
+    grid-template-columns: repeat(3, 1fr);
+}
 }
