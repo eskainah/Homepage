@@ -229,3 +229,60 @@ footer{
 }
 /* Footer ends here */
 }
+
+/* media Queries for desktop */
+@media (min-width: 960px) {  
+    /* Author info section starts here */
+ /* .pgHeader{
+    display: flex;
+    flex-direction: column;
+ }
+ */
+ .hero{
+    max-height: 100vh;
+    background: linear-gradient(166deg, var(--primary) 60%, var(--white) 60%);
+ }
+
+.author{
+    margin-left: 5% ;
+    width: 40%;
+    height: 90vh;
+    max-height: 90vh;
+    flex-direction: column;
+  }
+  .profile_img{
+    width: 100%;
+    max-height: 70vh;
+    left: 0px;
+  }
+  .author__name{
+    width: 100%;
+    top: -75px;
+    left: 0px;
+    }
+  .about{
+    width: 50%;
+    transform: translate(40%, -380px);
+    padding: 30px 30px 0 30px; 
+    h2{
+        text-indent: 0;
+    }
+  }
+  /*
+
+.
+.profile__link{
+        visibility: hidden;
+    }
+.about{
+    z-index: 1; 
+    transform: translate(0, -200px); 
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    font-size: 1.5rem;
+    
+    position: relative;
+    width: 90%;
+   
+} */
+}
