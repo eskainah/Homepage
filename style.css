@@ -268,4 +268,15 @@ footer{
 .project{
     grid-template-columns: repeat(3, 1fr);
 }
+.contact__info{
+    font-size: 1.5em;
+    padding: 3em 60px; 
+    h2{
+        margin-bottom: 0.4em;
+        font-size: 1.2em ;
+    }
+    p, address{
+        font-size:  .7em;
+    }
+}
 }
