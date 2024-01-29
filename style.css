@@ -1,5 +1,5 @@
 :root {
-    --primary: rgb(30, 117, 88);;
+    --primary: #030303;
     --text: #212529;
     --text-light: #fafafa;
     --white: #fff;
@@ -43,11 +43,6 @@ body {
     position: relative;
 }
 
-.two{
-    width: 90%;
-    height: 350px;
-    background-color: #42505e;
-}
 .author{
     display: flex;
     flex-direction: row;
@@ -97,7 +92,7 @@ body {
     box-shadow: var(--shadow);
 }
 .project__img{
-    background-color: rgb(30, 117, 88);
+    background-color: var(--primary);
     height: 10em;
 }
 .project__info{
@@ -126,7 +121,7 @@ body {
 Footer starts here
 */
 footer{
-    background-color: rgb(30, 117, 88);
+    background-color: var(--primary);
 }
  .footer{
     display: flex;
